@@ -3,12 +3,6 @@
 * Author  : Nguyễn Gia Hào
 * Created : 5/2019 
 *=============================
-*//*==========================
-* 1.Basic
-* 2.Navbar
-* 3.
-* 4.
-*=============================
 */
 
 /*===============
@@ -41,6 +35,10 @@ p {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .text-center {
@@ -80,7 +78,15 @@ a {
 }
 
 .p-23px {
-  padding: 23px;
+  padding: 23px !important;
+}
+
+.mb-34px {
+  margin-bottom: 34px !important;
+}
+
+.img-responsive {
+  width: 100%;
 }
 
 .container {
@@ -216,7 +222,7 @@ a {
 
 .btn {
   display: inline-block;
-  padding: 15px 24px;
+  padding: 11px 22px;
   border-radius: 15px;
   text-align: center;
   vertical-align: middle;
@@ -236,6 +242,35 @@ a {
   background: transparent;
 }
 
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+/*================
+| | | Category | |
+================*/
+#menu-category li {
+  padding: 0 20px;
+}
+#menu-category a {
+  display: block;
+  padding: 16px 0;
+  color: #000;
+  border-bottom: #a6a6a6 1px solid;
+}
+#menu-category li:last-child > a {
+  border-bottom: none;
+} 
+#menu-category i {
+  padding-right: 20px;
+  color: #a6a6a6;
+}
 
 /*===============
 | | | Banner | |
@@ -244,8 +279,8 @@ a {
 .banner-top {
   background: url(../image/banner1.png) no-repeat;
   background-size: cover;
-  padding-top: 90px;
-  padding-bottom: 65px;
+  padding-top: 85px;
+  padding-bottom: 48px;
 }
 
 .banner-top-content {
@@ -271,4 +306,121 @@ a {
 
 .banner-desc .desc {
   text-transform: unset
+}
+
+/*===============
+| | | Card | |
+===============*/
+
+.card {
+  position: relative;
+  background: #fff;
+}
+
+.card-body {
+  padding: 20px 23px;
+}
+
+.card-header {
+  display: flex;
+  border-bottom: 1px solid #a6a6a6;
+  padding-bottom: 11px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.card-menu {
+  flex-grow: 2;
+  text-align: right;
+  padding-right: 12px;
+}
+
+.card-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.card-menu li a {
+  color: #000;
+}
+
+.card-img {
+  margin-top: 24px;
+}
+
+.card-img img {
+  height: 200px;
+}
+
+.card-desc {
+  position: relative;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 10px;
+}
+
+.card-desc .price-die {
+  color: #a6a6a6;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.card-desc .price {
+  font-weight: bold;
+}
+
+.card-desc i {
+  color: #ffc808;
+}
+
+.card-desc i.off {
+  color: #a6a6a6;
+}
+
+#news-letters .card-desc {
+  text-align: left;
+}
+
+#news-letters input {
+  background: #ddd;
+  margin-top: 10px;
+}
+
+#featured-products img {
+  max-height: 96px;
+}
+
+#featured-products .card-desc {
+  margin-top: 24px;
+  padding-left: 7px;
+  text-align: left;
+}
+
+.banner-sale-img {
+  background: url(../image/category1.png) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  border-top: 246px solid transparent;
+  border-right: 60px solid #fff;
+}
+
+.mid-banner .mid-banner-content {
+  text-transform: uppercase;
+  padding-top: 20px;
+  line-height: 24px;
+}
+
+.mid-banner-content .btn {
+  margin-top: 20px;
+}
+
+.mid-banner-content .text-blue {
+  color: #0f8ce9 !important;
 }
