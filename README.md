@@ -7,10 +7,7 @@ Tạo 1 trang html từ file PSD cho trước
 Thực hiện bởi [Nguyễn Gia Hào](https://github.com/AIV-T-STARK)
 
 ## Liên kết
-
-- Liên kết đề bài nếu có
-- Liên kết học liệu nếu có
-- Liên kết bài làm online nếu có
+- github page: https://aiv-t-stark.github.io/Bai_3/
 
 ## Kiến thức nắm được
 
