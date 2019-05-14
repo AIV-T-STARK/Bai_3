@@ -446,10 +446,12 @@ ul {
 }
 
 .banner-sale-img {
-  background: url(../image/category1.png) no-repeat;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.banner-sale-imgg {
   border-top: 246px solid transparent;
   border-right: 60px solid #fff;
 }
@@ -482,13 +484,13 @@ ul {
   margin-bottom: 16px;
 }
 .banner-sale-desc a {
-  display: block;
+  display: inline-block;
   color: #0f8ce9;
-  text-decoration-color: #0f8ce9;
-  text-decoration-style: solid;
-  text-decoration-line: underline;
+  font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  padding-bottom: 2px;
+  margin-bottom: 14px;
+  border-bottom: #0f8ce9 solid 2px;
 }
 
 .banner-sale-desc p.text-dark {
@@ -497,6 +499,10 @@ ul {
 /*===============
 | | | footer | |
 ===============*/
+
+.footer {
+  font-size: 15px;
+}
 
 .top-footer-content {
   padding: 30px 0;
