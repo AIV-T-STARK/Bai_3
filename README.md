@@ -8,6 +8,7 @@ Thực hiện bởi [Nguyễn Gia Hào](https://github.com/AIV-T-STARK)
 
 ## Liên kết
 - github page: https://aiv-t-stark.github.io/Bai_3/
+- PSD: https://github.com/AIV-T-STARK/Bai_3/tree/master/PSD
 
 ## Kiến thức nắm được
 
