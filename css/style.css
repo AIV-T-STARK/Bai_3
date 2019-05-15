@@ -233,7 +233,7 @@ ul {
 .btn {
   display: inline-block;
   padding: 11px 22px;
-  border-radius: 15px;
+  border-radius: 999px;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
@@ -352,11 +352,7 @@ ul {
 
 .card-header .dots .dot {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
   text-align: center;
-  margin: 0 2px;
   vertical-align: middle;
 }
 
@@ -365,16 +361,19 @@ ul {
   width: 20px;
   height: 20px;
   line-height: 20px;
+  border-radius: 50%;
   color: #fff;
   text-align: center;
 }
 
-.dots .dot-left {
+.dots .dot-left i {
   background: #f10e34;
+  padding-right: 2px;
 }
 
-.dots .dot-right {
+.dots .dot-right i {
   background: #ddd;
+  padding-left: 2px;
 }
 
 .card-menu {
@@ -476,6 +475,9 @@ ul {
   padding-top: 40px;
   padding-right: 25px;
   line-height: 1.2;
+}
+.banner-sale-desc h1 {
+  font-weight: 900;
 }
 .banner-sale-desc h2 {
   text-transform: uppercase;
@@ -648,11 +650,12 @@ ul {
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
+  font-size: 15px;
 }
 
 .bottom-header-navbar ul li {
   display: inline-block;
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .bottom-header-navbar a {
