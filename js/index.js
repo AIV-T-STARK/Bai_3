@@ -1,16 +1,16 @@
 window.onload = function () {
 
   slick('#slide-product-1');
-  
-  
-
   slick('#slide-product-2');
   slick('#slide-product-3');
   slick('#slide-product-4');
   slick('#slide-product-5');
 
 
+  
+
   function slick(element) {
+
     let dots = document.querySelectorAll(element + ' .dots .dot');
 
     dots.forEach(dot => {
@@ -26,9 +26,7 @@ window.onload = function () {
       }
     });
 
-    setInterval(function(){
-      ClickRight(element);
-    }, 3000);
+    
   }
  
   function ClickRight(element) {
