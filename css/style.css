@@ -8,6 +8,8 @@
 /*===============
 | | | 1.Basic | |
 ===============*/
+
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -20,10 +22,10 @@ html {
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1170px;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
   background: #ddd;
   color: #000;
@@ -31,6 +33,14 @@ body {
 
 p {
   font-size: 15px;
+}
+
+img {
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
 a {
@@ -275,7 +285,7 @@ ul {
 }
 #menu-category a {
   display: block;
-  padding: 17px 0;
+  padding: 16px 0;
   color: #000;
   border-bottom: #a6a6a6 1px solid;
 }
@@ -294,15 +304,15 @@ ul {
 .banner-top {
   background: url(../image/banner1.png) no-repeat;
   background-size: cover;
-  padding-top: 90px;
-  padding-bottom: 61px;
+  height: 346px;
 }
 
 .banner-top-content {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  max-width: 65%;
+  max-width: 60%;
+  padding-top: 55px;
 }
 
 .banner-top-content .btn {
@@ -395,11 +405,20 @@ ul {
 
 .card-products .product {
   display: none;
-  transition: 0.5s;
 }
 
 .card-products .product.active {
   display: block;
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .card-img {
