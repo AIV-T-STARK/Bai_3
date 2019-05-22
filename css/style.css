@@ -563,7 +563,15 @@ ul {
 }
 
 .mid-footer-item a {
-  color: #fff;
+  color: #b6b6b6;
+}
+
+.mid-footer-item a:hover {
+  text-decoration: underline !important;
+}
+
+.mid-footer-item .cc a:hover i {
+  color: #b6b6b6;
 }
 
 .mid-footer-content i {
