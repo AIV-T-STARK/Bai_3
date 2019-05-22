@@ -3,6 +3,7 @@
 ## Chuyển từ psd sang html
 
 Tạo 1 trang html từ file PSD cho trước
+Sử dụng JS để tạo hiệu ứng
 
 Thực hiện bởi [Nguyễn Gia Hào](https://github.com/AIV-T-STARK)
 
@@ -12,4 +13,5 @@ Thực hiện bởi [Nguyễn Gia Hào](https://github.com/AIV-T-STARK)
 
 ## Kiến thức nắm được
 
-Tạo 1 trang html cơ bản từ PSD, không JS, không Responsive
+- Củng cố kiến thức HTNL/CSS/JS
+- Tạo 1 trang html cơ bản từ PSD, có sử JS, không Responsive
