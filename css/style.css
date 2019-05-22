@@ -248,6 +248,7 @@ ul {
   vertical-align: middle;
   font-weight: bold;
   text-transform: uppercase;
+  transition: 0.2s;
 }
 
 .btn-primary {
@@ -319,8 +320,17 @@ ul {
   margin-top: 40px;
 }
 
+.banner-top-content .btn:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
 .banner-desc {
   padding: 23px;
+}
+
+.banner-desc a {
+  color: #fff;
 }
 
 .banner-desc .title {
@@ -373,18 +383,13 @@ ul {
   line-height: 20px;
   border-radius: 50%;
   color: #fff;
+  background: #ddd;
   text-align: center;
   cursor: pointer;
 }
 
-.dots .dot-left i {
+.card-header .dots .dot i:hover {
   background: #f10e34;
-  padding-right: 2px;
-}
-
-.dots .dot-right i {
-  background: #ddd;
-  padding-left: 2px;
 }
 
 .card-menu {
@@ -555,6 +560,10 @@ ul {
 
 .mid-footer-content ul li {
   padding: 8px 0;
+}
+
+.mid-footer-item a {
+  color: #fff;
 }
 
 .mid-footer-content i {
