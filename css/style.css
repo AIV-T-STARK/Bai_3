@@ -229,15 +229,15 @@ ul {
 }
 
 .col-left {
-  -ms-flex: 0 0 350px;
-  flex: 0 0 350px;
-  max-width: 350px;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
 }
 
 .col-right {
-  -ms-flex: 0 0 860px;
-  flex: 0 0 860px;
-  max-width: 860px;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
 }
 
 .btn {
@@ -408,6 +408,10 @@ ul {
   color: #000;
 }
 
+.card-products .product a {
+  color: #000;
+}
+
 .card-products .product {
   display: none;
 }
@@ -542,6 +546,10 @@ ul {
 
 .top-footer-content {
   padding: 30px 0;
+}
+
+.top-footer-content img {
+  padding: 0 30px;
 }
 
 .mid-footer-content {
