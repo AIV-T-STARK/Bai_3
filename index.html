@@ -9,7 +9,9 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="./css/grid-system.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 
@@ -29,12 +31,12 @@
 					</div>
 					<div class="col-12">
 						<div class="row big-gutters">
-							<div class="col-left">
+							<div class="col-lg-left">
 								<a href="index.html" class="logo">
 									<img src="./image/logo.png" alt="logo" class="image-responsive">
 								</a>
 							</div>
-							<div class="col-right">
+							<div class="col-lg-right d-none d-lg-block">
 								<div class="col-left-left">
 									<!--Không biết đặt tên là gì?-->
 									<div class="seach">
@@ -60,8 +62,9 @@
 		<div class="bottom-header bg-red">
 			<div class="container">
 				<nav class="bottom-header-navbar">
-					<a href="#" class="title"><i class="fas fa-bars"></i>Categoryal</a>
-					<ul>
+					<button class="title"><i class="fas fa-bars"></i>Categoryal</button>
+					<button class="click-menu"><i class="fas fa-bars"></i></button>
+					<ul class="">
 						<li><a href="#">Clothing</a></li>
 						<li><a href="#">Electronics hot</a></li>
 						<li><a href="#">Health & Beauty</a></li>
@@ -76,8 +79,8 @@
 
 	<div class="main">
 		<div class="container">
-			<div class="row big-gutters mb-34px">
-				<div class="col-left">
+			<div class="row big-gutters mb-34px" id="top-header-wrapper">
+				<div class="col-lg-left d-none d-lg-block">
 					<div class="category bg-white">
 						<div class="category-content">
 							<ul id="menu-category">
@@ -93,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-right">
+				<div class="col-lg-right">
 					<div class="hero-banner">
 						<div class="banner-top">
 							<div class="banner-top-content text-white">
@@ -129,9 +132,9 @@
 				</div>
 			</div>
 			<div class="row big-gutters">
-				<div class="col-left deals">
+				<div class="col-lg-left deals">
 					<div class="row">
-						<div class="col-12 mb-34px" id="hot-deals">
+						<div class="col-12 col-md-6 col-lg-12 mb-34px" id="hot-deals">
 							<div class="card" id="slide-product-1">
 								<div class="card-body">
 									<div class="card-header">
@@ -204,7 +207,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 mb-34px" id="special-deal">
+						<div class="col-12 col-md-6 col-lg-12 mb-34px" id="special-deal">
 							<div class="card" id="slide-product-2">
 								<div class="card-body">
 									<div class="card-header">
@@ -275,7 +278,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 mb-34px" id="news-letters">
+						<div class="col-12 col-md-6 col-lg-12 mb-34px" id="news-letters">
 							<div class="card">
 								<div class="card-body">
 									<div class="card-header">
@@ -287,17 +290,18 @@
 										<form action="#">
 											<label for="newsleters">Sign Up for Our Newsletter!</label>
 											<input type="text" class="form-control" id="newsleters" name="newsleters">
+											<button type="submit" class="btn btn-primary">SUBSCRIBE</button>
 										</form>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-12">
+						<div class="col-12 col-md-6 col-lg-12">
 							<img src="./image/ad.png" alt="ad" class="img-responsive">
 						</div>
 					</div>
 				</div>
-				<div class="col-right product">
+				<div class="col-lg-right product">
 					<div class="row">
 						<div class="col-12 mb-34px" id="new-products">
 							<div class="card" id="slide-product-3">
@@ -320,7 +324,7 @@
 									</div>
 									<div class="card-products">
 										<div class="row">
-											<div class="col-3 product active">
+											<div class="col-6 col-md-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product1.png" alt="product1" class="img-responsive">
@@ -334,7 +338,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product active">
+											<div class="col-6 col-md-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product2.png" alt="product1" class="img-responsive">
@@ -348,7 +352,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product active">
+											<div class="col-6 col-md-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product3.png" alt="product1" class="img-responsive">
@@ -362,7 +366,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product active">
+											<div class="col-6 col-md-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product2.png" alt="product1" class="img-responsive">
@@ -376,7 +380,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-md-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product1.png" alt="product1" class="img-responsive">
@@ -390,7 +394,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-md-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product2.png" alt="product1" class="img-responsive">
@@ -404,7 +408,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-md-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product3.png" alt="product1" class="img-responsive">
@@ -418,7 +422,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-md-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product2.png" alt="product1" class="img-responsive">
@@ -432,7 +436,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-md-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product2.png" alt="product1" class="img-responsive">
@@ -453,7 +457,7 @@
 						</div>
 						<div class="col-12 mb-34px">
 							<div class="row big-gutters">
-								<div class="col-6 banner-sale">
+								<div class="col-12 col-md-6 banner-sale">
 									<div class="row no-gutters">
 										<div class="col-7 banner-sale-img" style="background-image:url(./image/category1.png)">
 											<div class="banner-sale-imgg"></div>
@@ -471,7 +475,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-6  banner-sale">
+								<div class="col-12 col-md-6  banner-sale">
 									<div class="row no-gutters">
 										<div class="col-7 banner-sale-img" style="background-image:url(./image/category1.png)">
 											<div class="banner-sale-imgg"></div>
@@ -512,7 +516,7 @@
 									</div>
 									<div class="card-products">
 										<div class="row">
-											<div class="col-3 product active">
+											<div class="col-6 col-lg-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product1.png" alt="product1" class="img-responsive">
@@ -526,7 +530,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product active">
+											<div class="col-6 col-lg-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product3.png" alt="product1" class="img-responsive">
@@ -540,7 +544,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product active">
+											<div class="col-6 col-lg-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product2.png" alt="product1" class="img-responsive">
@@ -554,7 +558,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product active">
+											<div class="col-6 col-lg-3 product active">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product1.png" alt="product1" class="img-responsive">
@@ -568,7 +572,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-lg-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product3.png" alt="product1" class="img-responsive">
@@ -582,7 +586,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-lg-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product1.png" alt="product1" class="img-responsive">
@@ -596,7 +600,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-lg-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product2.png" alt="product1" class="img-responsive">
@@ -610,7 +614,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-lg-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product1.png" alt="product1" class="img-responsive">
@@ -624,7 +628,7 @@
 													</div>
 												</a>
 											</div>
-											<div class="col-3 product">
+											<div class="col-6 col-lg-3 product">
 												<a href="#">
 													<div class="card-img">
 														<img src="./image/product3.png" alt="product1" class="img-responsive">
@@ -645,10 +649,10 @@
 						</div>
 						<div class="col-12 mb-34px mid-banner">
 							<div class="row no-gutters bg-white">
-								<div class="col-7">
+								<div class="col-12 col-md-7">
 									<img src="./image/banner2.png" alt="banner2" class="img-responsive">
 								</div>
-								<div class="col-5">
+								<div class="col-12 col-md-5">
 									<div class="mid-banner-content">
 										<h1 class="display-3">Beautiful Laptop</h1>
 										<h1 class="display-3 text-blue">Retina Display 18” Ready !</h1>
@@ -671,7 +675,7 @@
 									</div>
 									<div class="card-products">
 										<div class="row">
-											<div class="col-4 product active">
+											<div class="col-12 col-md-4 product active">
 												<div class="row">
 													<div class="col-12">
 														<a href="#">
@@ -725,7 +729,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="col-4 product active">
+											<div class="col-12 col-md-4 product active">
 												<div class="row">
 													<div class="col-12">
 														<a href="#">
@@ -779,7 +783,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="col-4 product active">
+											<div class="col-12 col-md-4 product active">
 												<div class="row">
 													<div class="col-12">
 														<a href="#">
@@ -833,7 +837,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="col-4 product">
+											<div class="col-12 col-md-4 product">
 												<div class="row">
 													<div class="col-12">
 														<a href="#">
@@ -887,7 +891,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="col-4 product">
+											<div class="col-12 col-md-4 product">
 												<div class="row">
 													<div class="col-12">
 														<a href="#">
@@ -992,7 +996,7 @@
 		<div class="mid-footer bg-dark text-dark">
 			<div class="container">
 				<div class="row mid-footer-content">
-					<div class="col-3">
+					<div class="col-12 col-md-3">
 						<a href="#">
 							<img src="./image/logo.png" alt="logo" class="img-responsive">
 						</a>
@@ -1005,7 +1009,7 @@
 							<li><i class="fas fa-envelope"></i>info@psdfreebies.com</li>
 						</ul>
 					</div>
-					<div class="col-3 mid-footer-item">
+					<div class="col-12 col-md-3 mid-footer-item">
 						<h1 class="title">Information</h1>
 						<br>
 						<ul>
@@ -1017,7 +1021,7 @@
 							<li><a href="#">FAQs</a></li>
 						</ul>
 					</div>
-					<div class="col-3 mid-footer-item">
+					<div class="col-12 col-md-3 mid-footer-item">
 						<h1 class="title">Our Social</h1>
 						<br>
 						<div class="row">
@@ -1039,7 +1043,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-3 mid-footer-item">
+					<div class="col-12 col-md-3 mid-footer-item">
 						<div class="row">
 							<div class="col-12">
 								<h1 class="title">Opening Time</h1>
