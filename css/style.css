@@ -102,7 +102,10 @@ ul {
 }
 
 .img-responsive {
-  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .btn {
@@ -433,7 +436,7 @@ ul {
 }
 
 .top-footer-content img {
-  padding: 0;
+  padding: 6px;
 }
 
 .mid-footer-content {
@@ -624,6 +627,8 @@ ul {
 .bottom-header-navbar a {
   color: #fff;
   text-transform: uppercase;
+  width: 100%;
+  display: block;
 }
 
 .bottom-header-navbar button {
@@ -640,3 +645,5 @@ ul {
 .bottom-header-navbar .title i {
   padding-right: 20px;
 }
+
+

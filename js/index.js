@@ -11,19 +11,19 @@ window.onload = function () {
 
   function slick(element) {
 
-    var x =  setInterval(function() {
-      ClickRight(element);
-    }, 4000);
+    // var x =  setInterval(function() {
+    //   ClickRight(element);
+    // }, 4000);
 
     let dots = document.querySelectorAll(element + ' .dots .dot');
 
     dots.forEach(dot => {
       if(dot.classList.contains('dot-right')) {
         dot.addEventListener('click', function() {
-          clearInterval(x);
-          x = setInterval(function() {
-            ClickRight(element);
-          }, 4000);
+          // clearInterval(x);
+          // x = setInterval(function() {
+          //   ClickRight(element);
+          // }, 4000);
           ClickRight(element);
         });
       }
