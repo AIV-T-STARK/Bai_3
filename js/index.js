@@ -2,28 +2,33 @@ window.onload = function () {
 
   slick('#slide-product-1');
   slick('#slide-product-2');
-  slick('#slide-product-3');
-  slick('#slide-product-4');
-  slick('#slide-product-5');
+  slick('#slide-product-3', false);
+  slick('#slide-product-4', false);
+  slick('#slide-product-5', false);
 
 
   
 
-  function slick(element) {
+  function slick(element, auto = true) {
 
-    // var x =  setInterval(function() {
-    //   ClickRight(element);
-    // }, 4000);
+    if(auto) {
+      var x =  setInterval(function() {
+        ClickRight(element);
+      }, 4000);
+    }
+    
 
     let dots = document.querySelectorAll(element + ' .dots .dot');
 
     dots.forEach(dot => {
       if(dot.classList.contains('dot-right')) {
         dot.addEventListener('click', function() {
-          // clearInterval(x);
-          // x = setInterval(function() {
-          //   ClickRight(element);
-          // }, 4000);
+          if(auto) {
+            clearInterval(x);
+            x = setInterval(function() {
+            ClickRight(element);
+            }, 4000);
+          }
           ClickRight(element);
         });
       }
@@ -86,3 +91,32 @@ window.onload = function () {
     menu.classList.toggle('show');
   })
 }
+
+// var firstSlides = document.querySelector(".banner-wrapper");
+// var slides = document.querySelectorAll(".banner-wrapper .banner-top");
+// var widthOfSlide = slides[0].clientWidth;
+// var count = 0;
+
+// function btnSlideLeft() {
+//   BtnLeft(firstSlides, widthOfSlide, slides.length, 1);
+// }
+// function btnSlideRight() {
+//   BtnRight(firstSlides, widthOfSlide, slides.length, 1);
+// }
+
+// function BtnRight(firstElement, Width, elementLength, slg) {
+//     firstElement.style.transition = "transform 0.6s ease-in-out";
+//     count++;
+//     if (count > elementLength - slg) {
+//         count = 0;
+//     }
+//     firstElement.style.transform = 'translateX(' + (-Width * count) + 'px)';
+// }
+// function BtnLeft(firstElement, Width, elementLength, slg) {
+//   firstElement.style.transition = "transform 0.6s ease-in-out";
+//   count--;
+//   if (count < 0) {
+//       count = elementLength - slg;
+//   }
+//   firstElement.style.transform = 'translateX(' + (-Width * count) + 'px)';
+// }
