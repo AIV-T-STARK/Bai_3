@@ -41,6 +41,16 @@ img {
   -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input, textarea, select { 
+  outline: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -94,7 +104,7 @@ ul {
 }
 
 .box-shadow {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.06);
 }
 
 .d-flex {
@@ -132,9 +142,9 @@ ul {
 
 .btn {
   display: inline-block;
-  padding: 11px 22px;
+  padding: 8px 22px;
   border: 1px solid transparent;
-  border-radius: 999px;
+  border-radius: 20px;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
@@ -157,7 +167,7 @@ ul {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.5rem 0.75rem;
+  padding: 0.8rem 0.75rem;
   font-size: 16px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -171,7 +181,6 @@ ul {
 
 .category {
   position: relative;
-  top: -3px;
 }
 
 #menu-category li {
@@ -179,9 +188,9 @@ ul {
 }
 #menu-category a {
   display: block;
-  padding: 16px 0;
+  padding: 14px 0;
   color: #222222;
-  border-bottom: #a6a6a6 1px solid;
+  border-bottom: 1px solid #eaeaea;
 }
 #menu-category li:last-child > a {
   border-bottom: none;
@@ -212,7 +221,7 @@ ul {
   line-height: 1.2;
   text-align: center;
   max-width: 60%;
-  padding-top: 55px;
+  padding-top: 80px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -227,7 +236,7 @@ ul {
 }
 
 .banner-desc {
-  padding: 23px;
+  padding: 18px;
 }
 
 .banner-desc a {
@@ -255,8 +264,8 @@ ul {
 }
 
 .card-body {
-  padding: 20px 23px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 23px;
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.06);
 }
 
 .card-header {
@@ -371,14 +380,22 @@ ul {
 }
 
 .card-desc p:first-child {
-  height: 30px;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+}
+
+.card-desc .price, .card-desc .price-die {
   line-height: 1.2;
+  display: block;
 }
 
 .card-desc .price-die {
   color: #a6a6a6;
   text-decoration: line-through;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .card-desc .price {
@@ -399,12 +416,13 @@ ul {
 }
 
 #news-letters input {
-  background: #ddd;
-  margin-top: 10px;
+  background: #f3f3f3;
+  margin-top: 20px;
+  border: none;
 }
 
 #news-letters .btn {
-  margin-top: 15px;
+  margin-top: 23px;
 }
 
 #featured-products img {
@@ -437,7 +455,7 @@ ul {
 }
 
 .mid-banner-content .btn {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .mid-banner-content .text-blue {
@@ -584,6 +602,7 @@ ul {
 
 .top-header-menu {
   text-align: right;
+  padding-top: 10px;
 }
 
 .top-header-menu li {
@@ -628,7 +647,7 @@ ul {
   border: 1px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .col-left-left .seach button {
@@ -643,7 +662,7 @@ ul {
 .col-left-left .cart {
   display: flex;
   margin-top: 22px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .col-left-left .cart-icon i {
@@ -655,6 +674,8 @@ ul {
   color: #fff;
   line-height: 36px;
   text-align: center;
+  font-size: 12px;
+  padding: 1px 1px 0 0;
 }
 
 .col-left-left .cart-desc {
@@ -662,6 +683,14 @@ ul {
   margin-left: 6px;
   font-size: 15px;
   line-height: 1.2;
+}
+
+.col-left-left .cart-desc p.total {
+  font-size: 11px
+}
+
+.col-left-left .cart-desc p.text-bold {
+  font-size: 14px
 }
 
 .bottom-header-navbar {
@@ -682,7 +711,7 @@ ul {
 
 .bottom-header-navbar ul li {
   display: inline-block;
-  margin-right: 40px;
+  margin-left: 25px;
 }
 
 .bottom-header-navbar a {

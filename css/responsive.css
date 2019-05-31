@@ -14,6 +14,10 @@
   font-size: 30px;
 }
 
+.display-24px {
+  font-size: 24px;
+}
+
 .display-3 {
   font-size: 20px;
 }
@@ -32,7 +36,7 @@
   }
 
   .banner-top {
-    height: 346px;
+    height: 378px;
   }
 
   
@@ -80,9 +84,22 @@
     height: 200px;
   }
 
+  .card-desc .price, .card-desc .price-die {
+    line-height: 1.2;
+    display: inline;
+  }
+
+  .card-desc .price-die {
+    margin-right: 10px;
+  }
+
 }
 
 @media (min-width: 992px) {
+
+  .top-footer-content {
+    padding: 40px 0;
+  }
   .d-lg-block {
     display: block;
   }
@@ -101,12 +118,17 @@
 
   .col-left-left {
     justify-content: flex-end;
+    padding-top: 11px;
+  }
+
+  .top-header .col-lg-left {
+    text-align: left;
   }
 }
 
 @media (min-width: 1120px) {
   .display-1 {
-    font-size: 58px;
+    font-size: 60px;
   }
   
   .display-2 {
@@ -115,6 +137,11 @@
   
   .display-3 {
     font-size: 22px;
+  }
+
+  .bottom-header-navbar ul li {
+    display: inline-block;
+    margin-left: 40px;
   }
 }
 
