@@ -387,6 +387,7 @@ ul {
 
 .card-desc i {
   color: #ffc808;
+  font-size: 12px;
 }
 
 .card-desc i.off {
