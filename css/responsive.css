@@ -47,6 +47,15 @@
   #new-products .product img, #latest-products .product img {
     height: 165px;
   }
+
+  .card-desc .price, .card-desc .price-die {
+    line-height: 1.2;
+    display: inline;
+  }
+
+  .card-desc .price-die {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -83,16 +92,6 @@
   #new-products .product img, #latest-products .product img {
     height: 200px;
   }
-
-  .card-desc .price, .card-desc .price-die {
-    line-height: 1.2;
-    display: inline;
-  }
-
-  .card-desc .price-die {
-    margin-right: 10px;
-  }
-
 }
 
 @media (min-width: 992px) {
@@ -176,10 +175,16 @@
     border-bottom: none;
   }
 
-  #top-header-wrapper .col-lg-left.show {
+  #top-header-wrapper .col-lg-left {
     display: block;
     position: absolute;
+    left: -350px;
     z-index: 1;
     max-width: 350px;
+    transition: 0.5s;
+  }
+
+  #top-header-wrapper .col-lg-left.show {
+    left: 0;
   }
 }
