@@ -98,6 +98,10 @@
   .top-footer-content img {
     padding: 0 30px;
   }
+
+  .col-left-left {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: 1120px) {
