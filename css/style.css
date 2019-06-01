@@ -282,6 +282,10 @@ ul {
   text-transform: uppercase;
 }
 
+.card-header .dots {
+  min-width: 50px;
+}
+
 .card-header .dots .dot {
   display: inline-block;
   text-align: center;
