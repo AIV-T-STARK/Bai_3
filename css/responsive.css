@@ -56,6 +56,10 @@
   .card-desc .price-die {
     margin-right: 10px;
   }
+
+  .top-header-menu li a {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -92,6 +96,10 @@
   #new-products .product img, #latest-products .product img {
     height: 200px;
   }
+
+  .col-left-left .seach input {
+    padding-left: 30px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -117,11 +125,15 @@
 
   .col-left-left {
     justify-content: flex-end;
-    padding-top: 11px;
   }
 
   .top-header .col-lg-left {
     text-align: left;
+  }
+
+  .top-header .logo {
+    display: block;
+    margin-top: -13px;
   }
 }
 
@@ -140,7 +152,11 @@
 
   .bottom-header-navbar ul li {
     display: inline-block;
-    margin-left: 40px;
+  }
+
+  .bottom-header-navbar a {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
